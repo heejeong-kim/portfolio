@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>김지은 | 바이오 연구자 포트폴리오</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ 네비게이션 ============ -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">Jieun Kim</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+      <a href="assets/CV_KimJieun.pdf" class="nav-cta" download>CV 다운로드</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ 히어로 ============ -->
+<section id="home" class="hero">
+  <div class="hero-inner">
+    <div class="hero-photo" aria-hidden="true">JK</div>
+    <p class="hero-eyebrow">Protein Structure &amp; Drug Target Discovery</p>
+    <h1>김지은</h1>
+    <p class="hero-role">바이오 연구원 · 단백질 구조 분석 및 신약 타겟 발굴</p>
+    <p class="hero-desc">
+      세포 실험(Wet Lab)부터 유전체 데이터 분석(Dry Lab)까지 —
+      암세포 단백질 발현 연구, CRISPR-Cas9 유전자 편집, 오픈소스 데이터 기반
+      바이오마커 발굴 파이프라인 구축 경험을 보유한 3년차 연구자입니다.
+    </p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-primary">연락하기</a>
+      <a href="assets/CV_KimJieun.pdf" class="btn btn-outline" download>CV 다운로드</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section">
+  <div class="section-inner">
+    <p class="section-eyebrow">About</p>
+    <h2>소개</h2>
+    <div class="about-grid">
+      <p class="about-text">
+        석사 졸업 후 3년간 바이오벤처 1곳과 대학 연구실 2곳에서 단백질 구조 분석과
+        신약 타겟 발굴 연구를 수행해왔습니다. 세포 배양 및 실험 설계부터 RNA-seq 기반
+        유전자 발현 분석, Python/R을 활용한 데이터 시각화, 논문 작성 및 학술 발표까지
+        연구의 전 과정을 아우르는 역량을 갖추고 있습니다. 실험(Wet Lab)과 데이터 분석(Dry Lab)을
+        모두 다룰 수 있다는 점이 강점이며, 공개 유전체 데이터셋을 활용한 재현 가능한
+        분석 파이프라인 구축에 관심을 두고 있습니다.
+      </p>
+      <div class="about-stats">
+        <div class="stat"><span class="stat-num">3+</span><span class="stat-label">년 경력</span></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">소속 기관</span></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">주요 연구 프로젝트</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills" class="section section-alt">
+  <div class="section-inner">
+    <p class="section-eyebrow">Skills</p>
+    <h2>핵심 역량</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <span class="skill-tag">Wet Lab</span>
+        <h3>세포 배양 및 실험 설계</h3>
+        <p>세포주 배양, 실험군 설계, 대조군 구성 등 재현 가능한 실험 프로토콜 수립 및 수행</p>
+      </div>
+      <div class="skill-card">
+        <span class="skill-tag">Dry Lab</span>
+        <h3>유전자 발현 분석 (RNA-seq)</h3>
+        <p>RNA-seq 데이터 전처리, 차등 발현 분석, 발현 패턴 해석을 통한 후보 타겟 도출</p>
+      </div>
+      <div class="skill-card">
+        <span class="skill-tag">Dry Lab</span>
+        <h3>데이터 시각화 (Python / R)</h3>
+        <p>Python·R 기반 통계 분석 및 히트맵·발현량 그래프 등 연구 결과 시각화</p>
+      </div>
+      <div class="skill-card">
+        <span class="skill-tag">Communication</span>
+        <h3>논문 작성 및 학술 발표</h3>
+        <p>연구 결과의 논문화, 학회 구두·포스터 발표를 통한 연구 성과 커뮤니케이션</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects" class="section">
+  <div class="section-inner">
+    <p class="section-eyebrow">Projects</p>
+    <h2>연구 프로젝트</h2>
+
+    <div class="tag-filter" id="tagFilter">
+      <button class="tag active" data-tag="all">전체</button>
+      <button class="tag" data-tag="단백질">단백질 발현</button>
+      <button class="tag" data-tag="CRISPR">CRISPR</button>
+      <button class="tag" data-tag="바이오마커">바이오마커</button>
+      <button class="tag" data-tag="RNA-seq">RNA-seq</button>
+    </div>
+
+    <div class="project-carousel-wrap">
+      <button class="carousel-btn prev" id="prevBtn" aria-label="이전">‹</button>
+      <div class="project-track" id="projectTrack">
+
+        <article class="project-card" data-tags="단백질 RNA-seq" data-project="p1">
+          <div class="project-thumb">🧬</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag-pill">단백질 발현</span><span class="tag-pill">RNA-seq</span>
+            </div>
+            <h3>암세포 특이적 단백질 발현 패턴 분석 연구</h3>
+            <p>종양 조직과 정상 조직 간 단백질 발현 차이를 분석해 잠재적 신약 타겟 후보를 도출한 연구</p>
+            <button class="btn-detail" data-open="p1">자세히 보기 →</button>
+          </div>
+        </article>
+
+        <article class="project-card" data-tags="CRISPR" data-project="p2">
+          <div class="project-thumb">✂️</div>
+          <div class="project-body">
+            <div class="project-tags"><span class="tag-pill">CRISPR</span></div>
+            <h3>CRISPR-Cas9 기반 유전자 편집 실험 및 효율 검증</h3>
+            <p>표적 유전자에 대한 CRISPR-Cas9 편집 실험을 설계·수행하고 편집 효율을 정량 검증한 연구</p>
+            <button class="btn-detail" data-open="p2">자세히 보기 →</button>
+          </div>
+        </article>
+
+        <article class="project-card" data-tags="바이오마커 RNA-seq" data-project="p3">
+          <div class="project-thumb">🧪</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag-pill">바이오마커</span><span class="tag-pill">RNA-seq</span>
+            </div>
+            <h3>오픈소스 유전체 데이터셋 활용 바이오마커 발굴 파이프라인</h3>
+            <p>공개 유전체 데이터셋(TCGA, GEO 등)을 활용해 재현 가능한 바이오마커 발굴 파이프라인을 구축한 연구</p>
+            <button class="btn-detail" data-open="p3">자세히 보기 →</button>
+          </div>
+        </article>
+
+      </div>
+      <button class="carousel-btn next" id="nextBtn" aria-label="다음">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience" class="section section-alt">
+  <div class="section-inner">
+    <p class="section-eyebrow">Experience</p>
+    <h2>경력</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">[재직 기간을 입력하세요]</span>
+          <h3>바이오벤처 · [기관명을 입력하세요]</h3>
+          <p>신약 타겟 발굴 및 단백질 구조 분석 연구 수행</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">[재직 기간을 입력하세요]</span>
+          <h3>대학 연구실 · [기관명을 입력하세요]</h3>
+          <p>CRISPR-Cas9 유전자 편집 실험 및 RNA-seq 기반 발현 분석 수행</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">[재직 기간을 입력하세요]</span>
+          <h3>대학 연구실 · [기관명을 입력하세요]</h3>
+          <p>세포 배양 실험 및 데이터 시각화 기반 연구 결과 분석</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PUBLICATIONS ============ -->
+<section id="publications" class="section">
+  <div class="section-inner">
+    <p class="section-eyebrow">Publications</p>
+    <h2>논문 및 학술 활동</h2>
+    <ul class="pub-list" id="pubList">
+      <li class="pub-item">
+        <div>
+          <p class="pub-title">[논문 제목을 입력하세요]</p>
+          <p class="pub-meta">[저널명] · [연도]</p>
+        </div>
+        <a href="#" class="pub-link">DOI / Scholar →</a>
+      </li>
+      <li class="pub-item">
+        <div>
+          <p class="pub-title">[논문 제목을 입력하세요]</p>
+          <p class="pub-meta">[저널명] · [연도]</p>
+        </div>
+        <a href="#" class="pub-link">DOI / Scholar →</a>
+      </li>
+      <li class="pub-item">
+        <div>
+          <p class="pub-title">[논문 제목을 입력하세요]</p>
+          <p class="pub-meta">[저널명] · [연도]</p>
+        </div>
+        <a href="#" class="pub-link">DOI / Scholar →</a>
+      </li>
+      <li class="pub-item pub-extra hidden">
+        <div>
+          <p class="pub-title">[논문 제목을 입력하세요]</p>
+          <p class="pub-meta">[저널명] · [연도]</p>
+        </div>
+        <a href="#" class="pub-link">DOI / Scholar →</a>
+      </li>
+      <li class="pub-item pub-extra hidden">
+        <div>
+          <p class="pub-title">[학회 포스터 발표 제목을 입력하세요]</p>
+          <p class="pub-meta">[학회명] · [연도]</p>
+        </div>
+        <a href="#" class="pub-link">상세 →</a>
+      </li>
+    </ul>
+    <button class="btn-more" id="pubMoreBtn">더보기 ▾</button>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section section-contact">
+  <div class="section-inner">
+    <p class="section-eyebrow">Contact</p>
+    <h2>연락하기</h2>
+    <p class="contact-desc">채용 및 공동 연구 제안은 아래 채널로 연락 주세요.</p>
+    <div class="contact-links">
+      <a href="mailto:your.email@example.com" class="contact-link">
+        <span class="contact-icon">✉</span> Email
+      </a>
+      <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener" class="contact-link">
+        <span class="contact-icon">in</span> LinkedIn
+      </a>
+      <a href="https://scholar.google.com/citations?user=your-id" target="_blank" rel="noopener" class="contact-link">
+        <span class="contact-icon">🎓</span> Google Scholar
+      </a>
+    </div>
+    <a href="assets/CV_KimJieun.pdf" class="btn btn-primary" download>CV 다운로드</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 Jieun Kim. Last updated 2026-07-23.</p>
+</footer>
+
+<!-- ============ 프로젝트 상세 모달 ============ -->
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal" role="dialog" aria-modal="true">
+    <button class="modal-close" id="modalClose" aria-label="닫기">×</button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
